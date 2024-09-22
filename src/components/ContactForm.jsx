@@ -36,7 +36,6 @@ const ContactForm = ({ onAdd }) => {
       onSubmit={handleSubmit}
     >
       <Form className={css.form}>
-        {/* <div className={css.formFields}> */}
         <label className={css.label}>
           Name
           <Field className={css.input} type="text" name="name" />
@@ -47,7 +46,6 @@ const ContactForm = ({ onAdd }) => {
           <Field className={css.input} type="text" name="number" />
           <ErrorMessage name="number" component="div" className={css.error} />
         </label>
-        {/* </div> */}
         <button className={css.button} type="submit">
           Add contact
         </button>
